@@ -10,11 +10,11 @@ const config: ExpoConfig = {
   userInterfaceStyle: 'automatic',
   platforms: ['ios', 'android'],
   ios: {
-    bundleIdentifier: 'com.expo-template.dev',
+    bundleIdentifier: 'com.expo_template.dev',
     supportsTablet: true,
   },
   android: {
-    package: 'com.expo-template.dev',
+    package: 'com.expo_template.dev',
     adaptiveIcon: {
       backgroundColor: '#E6F4FE',
       foregroundImage: './assets/images/android-icon-foreground.png',
