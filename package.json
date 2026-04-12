@@ -5,7 +5,9 @@
   "private": true,
   "scripts": {
     "start": "expo start",
+    "build:android": "expo run:android",
     "android": "expo start --android",
+    "build:ios": "expo run:ios",
     "ios": "expo start --ios",
     "reset-project": "node ./scripts/reset-project.js",
     "lint": "expo lint",
