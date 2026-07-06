@@ -10,11 +10,11 @@ const config: ExpoConfig = {
   userInterfaceStyle: 'automatic',
   platforms: ['ios', 'android'],
   ios: {
-    bundleIdentifier: 'com.expo_template.dev',
+    bundleIdentifier: 'com.expotemplate.dev',
     supportsTablet: true,
   },
   android: {
-    package: 'com.expo_template.dev',
+    package: 'com.expotemplate.dev',
     adaptiveIcon: {
       backgroundColor: '#E6F4FE',
       foregroundImage: './assets/images/android-icon-foreground.png',
@@ -43,6 +43,11 @@ const config: ExpoConfig = {
     ],
     'expo-font',
     'expo-web-browser',
+    'expo-image',
+    'expo-status-bar',
+
+    '@react-native-vector-icons/ant-design',
+    '@react-native-vector-icons/material-design-icons',
   ],
   experiments: {
     typedRoutes: true,

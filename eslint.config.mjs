@@ -3,6 +3,7 @@
 import { fixupConfigRules } from '@eslint/compat'
 import reactNativeConfig from '@react-native/eslint-config/flat'
 import expoConfig from 'eslint-config-expo/flat.js'
+import prettier from 'eslint-plugin-prettier'
 import { globalIgnores } from 'eslint/config'
 
 /** @param {import('eslint').Linter.Config[]} configs */
@@ -26,16 +27,41 @@ function dedupePlugins(configs) {
 }
 
 export default [
+  globalIgnores(['eslint.config.js', 'prettier.config.js', 'app.json', 'dist']),
+
   ...dedupePlugins([
     ...fixupConfigRules(expoConfig),
     ...fixupConfigRules(reactNativeConfig),
   ]),
 
-  globalIgnores(['eslint.config.js', 'prettier.config.js', 'app.json', 'dist']),
 
+  // Prettier
+  {
+    plugins: { prettier },
+    rules: {
+      'prettier/prettier': 'warn',
+    },
+  },
+
+  // React
   {
     rules: {
-      'react-native/no-raw-text': 'error',
+      'react/react-in-jsx-scope': 'off',
+    },
+  },
+
+  // React Native
+  {
+    rules: {
+      'react-native/no-raw-text': [
+        'error',
+        {
+          skip: ['ThemedText'],
+        },
+      ],
+
+      'react-native/sort-styles': 'warn',
+      'react-native/no-unused-styles': 'warn',
     },
   },
 ]
