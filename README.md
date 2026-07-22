@@ -15,7 +15,8 @@ Template for simple Expo app
 https://docs.expo.dev/workflow/upgrading-expo-sdk-walkthrough/#upgrade-dependencies:
 
 - `pnpx expo upgrade`: Upgrade the Expo SDK version and update all dependencies to compatible versions
-  - Or `pnpm add expo@^55.0.0`
+  - Or `pnpm add expo@^57`
+  - Or ` pnpx expo install expo@^57 --fix`
 - `pnpx expo install --check`: Check for outdated Expo-related dependencies and suggest updates
 - `pnpx expo install --fix`: Automatically update Expo-related dependencies to compatible versions
 - `pnpx expo install <package-name>`: Install a package and automatically choose the correct version compatible with the Expo SDK version
