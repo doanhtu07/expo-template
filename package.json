@@ -24,7 +24,7 @@
   "dependencies": {
     "@react-native-vector-icons/ant-design": "^13.1.2",
     "@react-native-vector-icons/material-design-icons": "^13.1.2",
-    "expo": "~57.0.7",
+    "expo": "~57.0.8",
     "expo-constants": "~57.0.6",
     "expo-dev-client": "~57.0.7",
     "expo-font": "~57.0.1",
