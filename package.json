@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@react-native-vector-icons/ant-design": "^13.1.2",
-    "@react-native-vector-icons/material-design-icons": "^13.1.2",
+    "@react-native-vector-icons/material-design-icons": "^13.1.4",
     "expo": "~57.0.27",
     "expo-constants": "~57.0.21",
     "expo-dev-client": "~57.0.19",
