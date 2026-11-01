@@ -28,7 +28,7 @@
     "expo": "~58.0.17",
     "expo-constants": "~58.0.13",
     "expo-dev-client": "~58.0.14",
-    "expo-font": "~58.0.9",
+    "expo-font": "~58.0.11",
     "expo-haptics": "~58.0.7",
     "expo-image": "~58.0.16",
     "expo-linking": "~58.0.14",
