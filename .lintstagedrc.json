@@ -1,4 +1,7 @@
 {
-  "**/*.{js,jsx,mjs,cjs,ts,tsx}": ["eslint --fix", "prettier --write"],
-  "**/*.{css,html,json,md,yaml,yml}": "prettier --write"
+  "**/*.{js,jsx,mjs,cjs,ts,tsx}": [
+    "pnpm --dir . exec eslint --fix",
+    "pnpm --dir . exec prettier --write"
+  ],
+  "**/*.{css,html,json,md,yaml,yml}": "pnpm --dir . exec prettier --write"
 }

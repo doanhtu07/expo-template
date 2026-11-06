@@ -1,4 +1,6 @@
 {
+  "window.title": "expo-template",
+
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.fixAll.sort-json": "never",
