@@ -21,7 +21,8 @@
     "lint": "expo lint && eslint",
     "format": "prettier",
     "check": "pnpm typecheck && prettier --write . && expo lint --fix && eslint --fix",
-    "epc": "tsx scripts/expo-packages-check.ts"
+    "epc": "tsx scripts/expo-packages-check.ts",
+    "prune-exclude": "tsx scripts/prune-release-age-exclude.ts"
   },
   "dependencies": {
     "@react-native-vector-icons/ant-design": "^14.0.0",
